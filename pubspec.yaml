@@ -1,0 +1,38 @@
+name: swipable_button_example
+description: "A new Flutter project."
+
+# Prevent the package from being accidentally published to pub.dev
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pie_chart: ^5.0.0
+  provider: ^6.0.0
+  shared_preferences: ^2.0.15
+  page_transition: ^2.0.5
+  swipeable_button_view: ^0.0.2
+  cupertino_icons: ^1.0.2
+  intl: ^0.17.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.9.2  # Ensure flutter_launcher_icons is in dev_dependencies
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/images/images2.png
+    - lib/assets/images4.png
+
+flutter_icons:
+  android: true    # Set this to true to generate icons for Android
+  ios: true        # Set this to true to generate icons for iOS
+  image_path: "lib/assets/playstore.png"  # Path to your app icon image
